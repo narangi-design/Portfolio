@@ -1,6 +1,5 @@
 
 function insertHeader() {
-    // Create header element
     const header = document.createElement('header');
     header.className = 'site-header';
 
@@ -56,9 +55,7 @@ function insertHeader() {
     });
     header.appendChild(socialDiv);
 
-    // Insert header at the top of the body
     document.body.insertAdjacentElement('afterbegin', header);
 }
 
-// Call the function on page load
 window.addEventListener('DOMContentLoaded', insertHeader);
