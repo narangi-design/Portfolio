@@ -1,0 +1,243 @@
+/*Jura Bold font-face*/
+@font-face {
+    font-family: 'Jura';
+    src: url('/Resources/Fonts/Jura/WOFF2/Jura-Bold.woff2') format('woff2'),
+         url('/Resources/Fonts/Jura/WOFF/Jura-Bold.woff') format('woff'),
+         url('/Resources/Fonts/Jura/TTF/Jura-Bold.ttf') format('truetype'),
+         url('/Resources/Fonts/Jura/OTF/Jura-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/*Jura Regular font-face*/
+@font-face {
+    font-family: 'Jura';
+    src: url('/Resources/Fonts/Jura/WOFF2/Jura-Regular.woff2') format('woff2'),
+         url('/Resources/Fonts/Jura/WOFF/Jura-Regular.woff') format('woff'),
+         url('/Resources/Fonts/Jura/TTF/Jura-Regular.ttf') format('truetype'),
+         url('/Resources/Fonts/Jura/OTF/Jura-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*Noto Sans Medium font-face*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/Resources/Fonts/Noto_Sans/WOFF2/NotoSans-Medium.woff2') format('woff2'),
+         url('/Resources/Fonts/Noto_Sans/TTF/NotoSans-Medium.ttf') format('truetype'),
+         url('/Resources/Fonts/Noto_Sans/OTF/NotoSans-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/*Noto Sans Regular font-face*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/Resources/Fonts/Noto_Sans/WOFF2/NotoSans-Regular.woff2') format('woff2'),
+         url('/Resources/Fonts/Noto_Sans/TTF/NotoSans-Regular.ttf') format('truetype'),
+         url('/Resources/Fonts/Noto_Sans/OTF/NotoSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*Root*/
+:root {
+    /*colors*/
+    --color-1000: #141E2B;
+    --color-800: #556984;
+    --color-600: #b4b9bf;
+    --color-400: #E0E0E0;
+    --color-200: #f2f2f2;
+    --color-000: #fff;
+    --orange: #FF7235;
+    --text-color: var(--color-1000);
+    --bg-color: var(--color-400);
+    /*font-families*/
+    --h-font-family: 'Jura';
+    --p-font-family: 'Noto Sans';
+    /*font-sizes*/
+    --h1-font-size: 64px;
+    --h2-font-size: 48px;
+    --h3-font-size: 40px;
+    --h4-font-size: 32px;
+    --h5-font-size: 24px;
+    --h6-font-size: 20px;
+    --p-font-size: 16px;
+    /*padding*/
+    --padding-inset-xs: 8px;
+    --padding-inset-s: 16px;
+    --padding-inset-m: 24px;
+    --padding-inset-l: 32px;
+    --padding-inset-xl: 48px;
+    /*radius*/
+    --radius-xs: 4px;
+    --radius-s: 8px;
+    --radius-m: 16px;
+    --radius-l: 24px;
+    --radius-xl: 32px;
+    /*spacing*/
+    --space-gap-xs: 8px;
+    --space-gap-s: 16px;
+    --space-gap-m: 24px;
+    --space-gap-l: 48px;
+    /*margin*/
+    --margin-x1: 8px;
+    --margin-x2: 16px;
+    --margin-x3: 24px;
+    --margin-x4: 32px;
+    --margin-x5: 40px;
+    --margin-x6: 48px;
+    --margin-x7: 56px;
+    --margin-x8: 64px;
+    --margin-x9: 128px;
+    --margin-x10: 256px;
+    /*borders*/
+    --border-m: 2px solid var(--color-1000);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    margin: 0 2%;
+  }
+
+  main {
+    margin: 2% 0;
+  }
+
+  section {
+    margin: var(--margin-x8) 0;
+  }
+
+  /*Text elements*/
+
+  h1, h2, h3, h4 {
+    font-family: var(--h-font-family);
+    font-weight: 700;
+    color: var(--text-color);
+  }
+
+  h1 {
+    font-size: var(--h1-font-size);
+    line-height: 160%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: var(--h2-font-size);
+    line-height: 160%;
+    padding-bottom: var(--padding-inset-m);
+  }
+
+  h3 {
+    font-size: var(--h3-font-size);
+  }
+
+  h4 {
+    font-size: var(--h4-font-size);
+  }
+
+  h5 {
+    font-size: var(--h5-font-size);
+  }
+
+  h6 {
+    font-size: var(--h6-font-size);
+  }
+
+  p, a, li {
+    font-family: var(--p-font-family);
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 160%;
+  }
+
+  .section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-gap-l);
+  }
+
+  /*color-section and child elements*/
+
+  .color-section {
+  }
+
+  .color-snippets {
+    display: flex;
+    gap: var(--space-gap-m);
+  }
+
+  .color-snippet {
+    flex: 1;
+    min-height: 200px;
+    padding: var(--padding-inset-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: var(--space-gap-s);
+    border-radius: var(--radius-m);
+  }
+
+  .color-snippet li {
+    list-style: none;
+  }
+
+  .dark-blue-snippet {
+    background-color: var(--color-1000);
+    --text-color: var(--color-000);
+  }
+
+  .white-snippet {
+    background-color: var(--color-000);
+  }
+
+  .orange-snippet {
+    background-color: var(--orange);
+    --text-color: var(--color-000);
+  }
+
+  /*font-section and child elements*/
+
+  .font-secton {
+  }
+
+  .font-snippets {
+    display: flex;
+    gap: var(--space-gap-m);
+  }
+
+  .font-snippet {
+    flex: 1;
+    padding: var(--padding-inset-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--space-gap-s);
+    border: var(--border-m);
+    border-radius: var(--radius-m);
+  }
+
+  .font-snippet ul {
+    padding: var(--padding-x3) 0 0 0;
+  }
+
+  .font-snippet li {
+    list-style: none;
+  }
+  
+  /*text-styles-section and child elements*/
+  .text-style-section {
+    border: var(--border-m);
+    border-radius: var(--radius-m);
+    padding: var(--padding-inset-m);
+  }
+
+  .text-style-section h2 {
+    text-align: center;
+  }
