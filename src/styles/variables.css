@@ -1,0 +1,123 @@
+:root {
+    /*colors*/
+    --color-0: #FFFFFF;
+    --color-1: #DCE1E7;
+    --color-2: #B9C3CE;
+    --color-3: #96A6B6;
+    --color-4: #72889D;
+    --color-5: #576A7D;
+    --color-6: #4D5F70;
+    --color-7: #435364;
+    --color-8: #394857;
+    --color-9: #2F3C49;
+    --color-10: #26313C;
+
+    --color-primary: #FFC635;
+    --color-primary-hover: #FFD66F;
+    --color-primary-active: #DC9E00;
+
+    --color-success: #00DC33;
+    --color-warning: #DC7900;
+    --color-danger:  #DC003B;
+    --color-info:    #00ACDC;
+
+    --color-surface: var(--color-9);
+    --color-surface-alt: var(--color-8);
+    --color-surface-elevated: var(--color-7);
+
+    --color-background: var(--color-10);
+    --color-background-alt: var(--color-9);
+
+    --color-border:var(--color-4);
+    --color-border-strong: var(--color-3);
+
+    --color-text: var(--color-1);
+    --color-text-muted: var(--color-5);
+    --color-text-inverse: var(--color-10);
+
+    /*font-families*/
+    --h-font-family: 'Jura';
+    --h-font-weight: 800;
+    --p-font-family: 'Noto Sans';
+    --p-font-weight: 400;
+    /*font-sizes*/
+    --h1-font-size: 4rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 2rem;
+    --h4-font-size: 1.5rem;
+    --p-font-size: 1rem;
+    /*padding*/
+    --padding-inset-xxs: 0.25rem;
+    --padding-inset-xs: 0.5rem;
+    --padding-inset-s: 1rem;
+    --padding-inset-m: 1.5rem;
+    --padding-inset-l: 2rem;
+    --padding-inset-xl: 3rem;
+    /*radius*/
+    --radius-xs: 0.25rem;
+    --radius-s: 0.5rem;
+    --radius-m: 1rem;
+    --radius-l: 1.5rem;
+    --radius-xl: 2rem;
+    /*spacing*/
+    --space-gap-xs: 0.5rem;
+    --space-gap-s: 1rem;
+    --space-gap-m: 1.5rem;
+    --space-gap-l: 2rem;
+    /*margin*/
+    --margin-x1: 0.5rem;
+    --margin-x2: 1rem;
+    --margin-x3: 1.5rem;
+    --margin-x4: 2rem;
+    --margin-x5: 3rem;
+    --margin-x6: 4rem;
+    --margin-x7: 5rem;
+    --margin-x8: 6rem;
+    --margin-x9: 7rem;
+    --margin-x10: 8rem;
+    /*borders*/
+    --border-radius-m: 0.125rem;
+    --border-m: var(--border-radius-m) solid var(--color-border-strong);
+  }
+
+  /*Jura Bold font-face*/
+@font-face {
+    font-family: 'Jura';
+    src: url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff2') format('woff2'),
+         url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff') format('woff'),
+         url('/src/assets/fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype'),
+         url('/src/assets/fonts/Jura/Jura-SemiBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+/*Jura Regular font-face*/
+@font-face {
+    font-family: 'Jura';
+    src: url('/src/assets/fonts/Jura/Jura-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/Jura/Jura-Regular.woff') format('woff'),
+         url('/src/assets/fonts/Jura/Jura-Regular.ttf') format('truetype'),
+         url('/src/assets/fonts/Jura/Jura-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*Noto Sans Medium font-face*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.woff2') format('woff2'),
+         url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.ttf') format('truetype'),
+         url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/*Noto Sans Regular font-face*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype'),
+         url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
