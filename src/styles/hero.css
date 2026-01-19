@@ -1,0 +1,69 @@
+.hero {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-top: calc(var(--layout-padding) * -1);
+  padding-top: var(--layout-padding);
+  margin-bottom: var(--space-xl);
+  background-color: var(--color-background);
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    position: relative;
+    top: auto;
+    margin-top: 0;
+  }
+}
+
+.hero h1 {
+  text-align: start;
+  font-family: var(--font-family-heading);
+  font-size: var(--text-display);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.hero-descr {
+  font-family: var(--font-family-body);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+
+  margin-bottom: var(--space-m);
+}
+
+.hero-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-tech_item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+}
+
+.hero-tech_icon svg {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+
+  fill: currentColor;
+}
+
+.hero-tech_label {
+
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+
+  font-size: var(--text-caption);
+}

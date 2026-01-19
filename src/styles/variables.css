@@ -1,123 +1,191 @@
 :root {
-    /*colors*/
-    --color-0: #FFFFFF;
-    --color-1: #DCE1E7;
-    --color-2: #B9C3CE;
-    --color-3: #96A6B6;
-    --color-4: #72889D;
-    --color-5: #576A7D;
-    --color-6: #4D5F70;
-    --color-7: #435364;
-    --color-8: #394857;
-    --color-9: #2F3C49;
-    --color-10: #26313C;
+  /* Raw colors */
 
-    --color-primary: #FFC635;
-    --color-primary-hover: #FFD66F;
-    --color-primary-active: #DC9E00;
+  --color-0: #ffffff;
+  --color-1: #dce1e7;
+  --color-2: #b9c3ce;
+  --color-3: #96a6b6;
+  --color-4: #72889d;
+  --color-5: #576a7d;
+  --color-6: #4d5f70;
+  --color-7: #435364;
+  --color-8: #394857;
+  --color-9: #2f3c49;
+  --color-10: #26313c;
 
-    --color-success: #00DC33;
-    --color-warning: #DC7900;
-    --color-danger:  #DC003B;
-    --color-info:    #00ACDC;
+  /* Brand colors */
 
-    --color-surface: var(--color-9);
-    --color-surface-alt: var(--color-8);
-    --color-surface-elevated: var(--color-7);
+  --color-primary: #ffc635;
+  --color-primary-hover: #ffe299;
+  --color-primary-active: #c18a00;
 
-    --color-background: var(--color-10);
-    --color-background-alt: var(--color-9);
+  --color-success: #00dc33;
+  --color-warning: #dc7900;
+  --color-danger: #dc003b;
+  --color-info: #00acdc;
 
-    --color-border:var(--color-4);
-    --color-border-strong: var(--color-3);
+  /* Typo */
 
-    --color-text: var(--color-1);
-    --color-text-muted: var(--color-5);
-    --color-text-inverse: var(--color-10);
+  --font-family-heading: 'Jura';
+  --font-family-body: 'Noto Sans';
 
-    /*font-families*/
-    --h-font-family: 'Jura';
-    --h-font-weight: 800;
-    --p-font-family: 'Noto Sans';
-    --p-font-weight: 400;
-    /*font-sizes*/
-    --h1-font-size: 4rem;
-    --h2-font-size: 3rem;
-    --h3-font-size: 2rem;
-    --h4-font-size: 1.5rem;
-    --p-font-size: 1rem;
-    /*padding*/
-    --padding-inset-xxs: 0.25rem;
-    --padding-inset-xs: 0.5rem;
-    --padding-inset-s: 1rem;
-    --padding-inset-m: 1.5rem;
-    --padding-inset-l: 2rem;
-    --padding-inset-xl: 3rem;
-    /*radius*/
-    --radius-xs: 0.25rem;
-    --radius-s: 0.5rem;
-    --radius-m: 1rem;
-    --radius-l: 1.5rem;
-    --radius-xl: 2rem;
-    /*spacing*/
-    --space-gap-xs: 0.5rem;
-    --space-gap-s: 1rem;
-    --space-gap-m: 1.5rem;
-    --space-gap-l: 2rem;
-    /*margin*/
-    --margin-x1: 0.5rem;
-    --margin-x2: 1rem;
-    --margin-x3: 1.5rem;
-    --margin-x4: 2rem;
-    --margin-x5: 3rem;
-    --margin-x6: 4rem;
-    --margin-x7: 5rem;
-    --margin-x8: 6rem;
-    --margin-x9: 7rem;
-    --margin-x10: 8rem;
-    /*borders*/
-    --border-radius-m: 0.125rem;
-    --border-m: var(--border-radius-m) solid var(--color-border-strong);
-  }
+  --font-weight-regular: 200;
+  --font-weight-medium: 500;
+  --font-weight-bold: 900;
 
-  /*Jura Bold font-face*/
+  --text-display: 4rem;
+  --text-title: 2.8rem;
+  --text-subtitle: 1.6rem;
+  --text-heading: 1.4rem;
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+
+  /* Spacing */
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+
+  /* Radius */
+
+  --radius-xs: 0.25rem;
+  --radius-s: 0.5rem;
+  --radius-m: 1rem;
+  --radius-l: 1.5rem;
+  --radius-xl: 2rem;
+
+  /* Borders */
+
+  --border-width-s: 0.0625rem;
+  --border-width-m: 0.125rem;
+
+  /* Z-Index */
+
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+
+  /* Accessibility */
+
+  --focus-outline-width: 2px;
+  --focus-outline-offset: 2px;
+}
+
+/* Dark theme */
+
+:root,
+:root[data-theme='dark'] {
+  --color-background: var(--color-10);
+  --color-background-alt: var(--color-9);
+
+  --color-surface: var(--color-9);
+  --color-surface-alt: var(--color-8);
+  --color-surface-elevated: var(--color-6);
+
+  --color-border: var(--color-4);
+  --color-border-strong: var(--color-3);
+
+  --color-text-primary: var(--color-1);
+  --color-text-secondary: var(--color-3);
+  --color-text-inverse: var(--color-10);
+
+  --focus-outline-color: var(--color-primary);
+}
+
+/* Light theme */
+
+:root[data-theme='light'] {
+  --color-background: var(--color-0);
+  --color-background-alt: var(--color-1);
+
+  --color-surface: var(--color-1);
+  --color-surface-alt: var(--color-2);
+  --color-surface-elevated: var(--color-0);
+
+  --color-border: var(--color-3);
+  --color-border-strong: var(--color-4);
+
+  --color-text-primary: var(--color-10);
+  --color-text-secondary: var(--color-6);
+  --color-text-inverse: var(--color-0);
+
+  --focus-outline-color: var(--color-primary);
+}
+
+/* Layout tokens */
+
+:root {
+  --header-width: 10rem;
+  --layout-padding: var(--space-l);
+}
+
+/* Interactive tokens */
+
+:root {
+  --interactive-default: var(--color-primary);
+  --interactive-hover: var(--color-primary-hover);
+  --interactive-active: var(--color-primary-active);
+  --interactive-disabled: var(--color-text-muted);
+  --interactive-focus-outline: var(--focus-outline);
+}
+
+/* Motion */
+
+:root {
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* Composed tokens */
+
+:root {
+  --border-default: var(--border-width-m) solid var(--color-border-strong);
+  --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+}
+
+/* Fonts */
+
+/* Jura Bold (variable) */
 @font-face {
-    font-family: 'Jura';
-    src: url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff2') format('woff2'),
-         url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff') format('woff'),
-         url('/src/assets/fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype'),
-         url('/src/assets/fonts/Jura/Jura-SemiBold.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-  }
+  font-family: 'Jura';
+  src:
+    url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff2') format('woff2'),
+    url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff') format('woff'),
+    url('/src/assets/fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
 
-/*Jura Regular font-face*/
+/* Jura Regular */
 @font-face {
-    font-family: 'Jura';
-    src: url('/src/assets/fonts/Jura/Jura-Regular.woff2') format('woff2'),
-         url('/src/assets/fonts/Jura/Jura-Regular.woff') format('woff'),
-         url('/src/assets/fonts/Jura/Jura-Regular.ttf') format('truetype'),
-         url('/src/assets/fonts/Jura/Jura-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: 'Jura';
+  src:
+    url('/src/assets/fonts/Jura/Jura-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/Jura/Jura-Regular.woff') format('woff'),
+    url('/src/assets/fonts/Jura/Jura-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
-/*Noto Sans Medium font-face*/
+/* Noto Sans Medium */
 @font-face {
-    font-family: 'Noto Sans';
-    src: url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.woff2') format('woff2'),
-         url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.ttf') format('truetype'),
-         url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: 'Noto Sans';
+  src:
+    url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.woff2') format('woff2'),
+    url('/src/assets/fonts/Noto_Sans/NotoSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 
-/*Noto Sans Regular font-face*/
+/* Noto Sans Regular */
 @font-face {
-    font-family: 'Noto Sans';
-    src: url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2'),
-         url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype'),
-         url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: 'Noto Sans';
+  src:
+    url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}

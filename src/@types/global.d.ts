@@ -6,6 +6,8 @@ declare global {
     | 'Jest'
     | 'HTML'
     | 'CSS'
+    | 'Tilda'
+    | 'Wix'
 }
 
 export {}
