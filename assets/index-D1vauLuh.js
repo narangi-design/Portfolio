@@ -28,7 +28,7 @@
         <span class="social-link_label">
             ${e.title}
         </span>
-    `,e}function S(){const t=document.createElement("nav");return t.className="main-nav",t.setAttribute("aria-label","Main navigation"),[{label:"Projects",href:"#projects"},{label:"About",href:"#about"}].forEach(n=>{const o=document.createElement("a");o.className="main-nav_link",o.href=n.href,o.textContent=n.label,t.appendChild(o)}),t}function x(){const t=document.createElement("header");t.className="site-header",t.appendChild(E()),t.appendChild(S()),document.body.insertAdjacentElement("afterbegin",t)}function k(t){const e=document.createElement("ul");return e.className="hero-tech",t.forEach(n=>{const o=document.createElement("li");o.className="hero-tech_item",o.innerHTML=`
+    `,e}function S(){const t=document.createElement("nav");return t.className="main-nav",t.setAttribute("aria-label","Main navigation"),[{label:"Projects",href:"#projects"},{label:"Stack",href:"#about"}].forEach(n=>{const o=document.createElement("a");o.className="main-nav_link",o.href=n.href,o.textContent=n.label,t.appendChild(o)}),t}function x(){const t=document.createElement("header");t.className="site-header",t.appendChild(E()),t.appendChild(S()),document.body.insertAdjacentElement("afterbegin",t)}function k(t){const e=document.createElement("ul");return e.className="hero-tech",t.forEach(n=>{const o=document.createElement("li");o.className="hero-tech_item",o.innerHTML=`
             <span class="hero-tech_icon" aria-hidden="true">
                 ${n.icon}
             </span>
