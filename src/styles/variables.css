@@ -196,6 +196,7 @@
     --text-title: 2.4rem;
     --text-subtitle: 1.5rem;
     --text-heading: 1.35rem;
+    --layout-padding: var(--space-m);
   }
 }
 
@@ -206,5 +207,6 @@
     --text-subtitle: 1.4rem;
     --text-heading: 1.25rem;
     --text-body: 0.95rem;
+    --layout-padding: var(--space-m);
   }
 }
