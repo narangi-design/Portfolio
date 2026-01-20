@@ -5,6 +5,12 @@
   gap: var(--space-m);
 }
 
+@media (max-width: 48rem) {
+  .snippet-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .snippet {
   display: flex;
   flex-direction: column;

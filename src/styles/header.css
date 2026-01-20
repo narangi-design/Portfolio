@@ -1,31 +1,26 @@
-header {
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
-
   width: var(--header-width);
   height: 100vh;
   padding: var(--space-m);
-
   display: flex;
   flex-direction: column;
   z-index: var(--z-header);
-
   background: var(--color-background-alt);
 }
 
 @media (max-width: 48rem) {
-  header {
-    position: relative;
+  .site-header {
     top: auto;
     left: auto;
     width: 100%;
-    height: auto;
+    height: 4rem;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-
-    padding: var(--space-s) var(--layout-padding);
+    justify-content: center;
+    padding: var(--space-xs) var(--layout-padding);
   }
 }
 
@@ -34,7 +29,6 @@ header {
   flex-direction: row;
   justify-content: center;
   gap: var(--space-s);
-  margin-bottom: var(--space-l);
 }
 
 .social-link {

@@ -189,3 +189,22 @@
   font-weight: 200;
   font-style: normal;
 }
+
+@media (max-width: 64rem) {
+  :root {
+    --text-display: 3.2rem;
+    --text-title: 2.4rem;
+    --text-subtitle: 1.5rem;
+    --text-heading: 1.35rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --text-display: 2.2rem;
+    --text-title: 1.8rem;
+    --text-subtitle: 1.4rem;
+    --text-heading: 1.25rem;
+    --text-body: 0.95rem;
+  }
+}
