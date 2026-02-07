@@ -1,6 +1,7 @@
 import tsIcon from './assets/img/techs/typescript.svg?raw'
 import reactIcon from './assets/img/techs/react.svg?raw'
 import cssIcon from './assets/img/techs/css3.svg?raw'
+import htmlIcon from './assets/img/techs/html5.svg?raw'
 
 import insertHeader from './header'
 import insertHeroSection, { type HeroDefinition } from './hero'
@@ -21,7 +22,7 @@ function createBottomSection(
 const heroData: HeroDefinition = {
     heroTitle: 'TypeScript Front-end Developer',
     heroDescr:
-        `Hello, I am Daria, and I am a front-end developer with experience in UX,
+        `Hello, I am Daria, and I am a front-end developer with 5 years of experience in UX,
         accessibility, and performance optimization. I work independently,
         understand both technical and product requirements and combine
         design thinking and engineering practices to build clear, usable web interfaces.`,
@@ -29,24 +30,25 @@ const heroData: HeroDefinition = {
         { label: 'TypeScript', icon: tsIcon },
         { label: 'React', icon: reactIcon },
         { label: 'CSS', icon: cssIcon },
+        { label: 'HTML', icon: htmlIcon }
     ],
 }
 
 const projectsData: SnippetDefinition[] = [
+    {
+        title: 'Hue Glue Game',
+        url: 'https://narangi-design.github.io/hue-glue-game/',
+        descr: 'Drag, drop, and swap colors to solve the puzzle. A color-matching game for desktop and mobile.',
+        labels: ['TypeScript', 'React', 'CSS', 'Claude Code'],
+        image: '',
+    }, 
     {
         title: 'Keyboard Tester',
         url: 'https://narangi-design.github.io/keyboard-tester/',
         descr: 'Web application to test your desktop keyboard. For now only for Windows',
         labels: ['TypeScript', 'React', 'CSS', 'Jest'],
         image: '',
-    },
-    {
-        title: 'Computer Parts Compatibility Checker',
-        url: 'https://github.com/narangi-design/comp-parts-compatibility',
-        descr: 'Web application is in progress, so check out Github repository',
-        labels: ['TypeScript', 'React'],
-        image: '',
-    },    
+    }, 
     {
         title: 'Medical Excellence League',
         url: 'https://medexleague.com/',
@@ -138,7 +140,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     insertAboutMe(
         scrollContainer,
-        'About Me',
+        'My stack',
         aboutMeData,
         (content) => createBottomSection(content, 'about')
     )

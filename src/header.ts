@@ -66,7 +66,7 @@ function createMainNav(): HTMLElement {
 
     const items = [
         { label: 'Projects', href: '#projects' },
-        { label: 'About', href: '#about' },
+        { label: 'Stack', href: '#about' },
     ]
 
     items.forEach(item => {
