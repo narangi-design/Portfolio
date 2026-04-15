@@ -1,5 +1,6 @@
 import tsIcon from './assets/img/techs/typescript.svg?raw'
 import reactIcon from './assets/img/techs/react.svg?raw'
+import vueIcon from './assets/img/techs/vue.svg?raw'
 import cssIcon from './assets/img/techs/css3.svg?raw'
 import htmlIcon from './assets/img/techs/html5.svg?raw'
 
@@ -29,12 +30,20 @@ const heroData: HeroDefinition = {
     tech: [
         { label: 'TypeScript', icon: tsIcon },
         { label: 'React', icon: reactIcon },
+        { label: 'Vue.js', icon: vueIcon },
         { label: 'CSS', icon: cssIcon },
         { label: 'HTML', icon: htmlIcon }
     ],
 }
 
 const projectsData: SnippetDefinition[] = [
+    {
+        title: 'Criblet',
+        url: 'https://narangi-design.github.io/cheat-sheet-manager/',
+        descr: 'A personal notes app for storing and organizing reference material — code snippets, tables, and images — accessible from any device.',
+        labels: ['Vue.js', 'TypeScript', 'CSS', 'Claude Code'],
+        image: '',
+    }, 
     {
         title: 'Hue Glue Game',
         url: 'https://narangi-design.github.io/hue-glue-game/',
@@ -50,13 +59,6 @@ const projectsData: SnippetDefinition[] = [
         image: '',
     }, 
     {
-        title: 'Medical Excellence League',
-        url: 'https://medexleague.com/',
-        descr: 'Landing page for a competition platform for doctors',
-        labels: ['Tilda', 'CSS'],
-        image: '',
-    },
-    {
         title: 'Soyka NL',
         url: 'https://www.soyka.nl/',
         descr: 'Website for a non-profit organization advocating for human rights and democracy',
@@ -68,7 +70,7 @@ const projectsData: SnippetDefinition[] = [
 const aboutMeData: AboutMeDefinition = {
     techStack: [
         'TypeScript, JavaScript (ES6+)',
-        'React',
+        'React, Vue.js',
         'HTML, CSS',
         'UX design patterns',
     ],

@@ -8,6 +8,8 @@ declare global {
     | 'CSS'
     | 'Tilda'
     | 'Wix'
+    | 'Claude Code'
+    | 'Vue.js'
 }
 
 export {}
