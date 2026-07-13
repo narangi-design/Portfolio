@@ -38,10 +38,10 @@ const heroData: HeroDefinition = {
 
 const projectsData: SnippetDefinition[] = [
     {
-        title: 'Criblet',
-        url: 'https://narangi-design.github.io/cheat-sheet-manager/',
-        descr: 'A personal notes app for storing and organizing reference material — code snippets, tables, and images — accessible from any device.',
-        labels: ['Vue.js', 'TypeScript', 'CSS', 'Claude Code'],
+        title: 'Book Club',
+        url: 'https://bookclub-frontend-two.vercel.app/dashboard/',
+        descr: 'Web platform for tracking book club activities. Full access is available by invitation only.',
+        labels: ['React', 'Rest API', 'SCSS', 'Telegram Bot API', 'Supabase', 'Claude Code'],
         image: '',
     }, 
     {

@@ -10,6 +10,10 @@ declare global {
     | 'Wix'
     | 'Claude Code'
     | 'Vue.js'
+    | 'Rest API'
+    | 'SCSS'
+    | 'Telegram Bot API'
+    | 'Supabase'
 }
 
 export {}

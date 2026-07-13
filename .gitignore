@@ -15,6 +15,12 @@ build/
 *.tsbuildinfo
 
 # -------------------------
+# Next.js build output
+# -------------------------
+.next/
+out/
+
+# -------------------------
 # Environment files
 # -------------------------
 .env
