@@ -67,8 +67,8 @@
 }
 
 .social-link_icon svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: var(--icon-m);
+  height: var(--icon-m);
   display: block;
 
   fill: currentColor;

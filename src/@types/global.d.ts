@@ -6,14 +6,15 @@ declare global {
     | 'Jest'
     | 'HTML'
     | 'CSS'
-    | 'Tilda'
     | 'Wix'
     | 'Claude Code'
-    | 'Vue.js'
-    | 'Rest API'
+    | 'REST API'
     | 'SCSS'
     | 'Telegram Bot API'
-    | 'Supabase'
+    | 'Docker'
+    | 'FastAPI'
+    | 'PostgreSQL'
+    | 'Vitest'
 }
 
 export {}

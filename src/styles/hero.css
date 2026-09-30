@@ -16,6 +16,12 @@
   }
 }
 
+@media (min-width: 48.01rem) and (max-height: 37.5rem) {
+  .hero {
+    position: relative;
+  }
+}
+
 .hero h1 {
   text-align: start;
   font-family: var(--font-family-heading);
@@ -53,8 +59,8 @@
 }
 
 .hero-tech_icon svg {
-  width: 2rem;
-  height: 2rem;
+  width: var(--icon-l);
+  height: var(--icon-l);
   display: block;
 
   fill: currentColor;

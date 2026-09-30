@@ -71,6 +71,20 @@ main {
   }
 }
 
+/* Too short for a sticky hero + snap area: fall back to plain page scroll */
+@media (min-width: 48.01rem) and (max-height: 37.5rem) {
+  .scroll-container {
+    flex: none;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .section-bottom {
+    scroll-snap-align: none;
+    min-height: auto;
+  }
+}
+
 .section-bottom>* {
   width: 100%;
   padding-bottom: var(--layout-padding);

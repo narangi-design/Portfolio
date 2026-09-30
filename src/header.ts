@@ -59,15 +59,15 @@ function createSocialLink(link: SocialLinkDefinition): HTMLElement {
     return a
 }
 
-function createMainNav(): HTMLElement {
+export interface NavItem {
+    label: string
+    href: string
+}
+
+function createMainNav(items: NavItem[]): HTMLElement {
     const nav = document.createElement('nav')
     nav.className = 'main-nav'
     nav.setAttribute('aria-label', 'Main navigation')
-
-    const items = [
-        { label: 'Projects', href: '#projects' },
-        { label: 'Stack', href: '#about' },
-    ]
 
     items.forEach(item => {
         const a = document.createElement('a')
@@ -80,12 +80,12 @@ function createMainNav(): HTMLElement {
     return nav
 }
 
-export default function insertHeader(): void {
+export default function insertHeader(navItems: NavItem[]): void {
     const header = document.createElement('header')
     header.className = 'site-header'
 
     header.appendChild(createSocialLinksNav())
-    header.appendChild(createMainNav())
+    header.appendChild(createMainNav(navItems))
 
     document.body.insertAdjacentElement('afterbegin', header)
 }

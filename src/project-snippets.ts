@@ -38,7 +38,7 @@ function createSnippetsGrid(snippets: SnippetDefinition[]): HTMLElement {
     return grid
 }
 
-function createSnippetsSection(
+export default function createSnippetsSection(
     titleText: string,
     snippets: SnippetDefinition[]
 ): HTMLElement {
@@ -52,14 +52,4 @@ function createSnippetsSection(
     section.appendChild(createSnippetsGrid(snippets))
 
     return section
-}
-
-export default function insertProjects(
-    scrollContainer: HTMLElement,
-    titleText: string,
-    snippets: SnippetDefinition[],
-    wrap: (content: HTMLElement) => HTMLElement
-): void {
-    const content = createSnippetsSection(titleText, snippets)
-    scrollContainer.appendChild(wrap(content))
 }

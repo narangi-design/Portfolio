@@ -26,17 +26,18 @@
 
   /* Typo */
 
-  --font-family-heading: 'Jura';
-  --font-family-body: 'Noto Sans';
+  --font-family-heading: 'Jura', sans-serif;
+  --font-family-body: 'Noto Sans', sans-serif;
 
-  --font-weight-regular: 200;
+  --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 900;
 
-  --text-display: 4rem;
-  --text-title: 2.8rem;
-  --text-subtitle: 1.6rem;
-  --text-heading: 1.4rem;
+  /* Scales with both viewport width and height so the hero stays compact on short screens */
+  --text-display: clamp(2.2rem, min(4.5vw, 7vh), 4rem);
+  --text-title: clamp(1.8rem, min(3vw, 5vh), 2.8rem);
+  --text-subtitle: clamp(1.4rem, min(1.8vw, 3vh), 1.6rem);
+  --text-heading: clamp(1.25rem, min(1.5vw, 2.6vh), 1.4rem);
   --text-body: 1rem;
   --text-caption: 0.875rem;
 
@@ -45,9 +46,15 @@
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
   --space-s: 1rem;
-  --space-m: 1.5rem;
-  --space-l: 2rem;
-  --space-xl: 3rem;
+  /* Larger steps scale with the viewport, same approach as --text-display */
+  --space-m: clamp(1rem, min(1.8vw, 2.5vh), 1.5rem);
+  --space-l: clamp(1.25rem, min(2.4vw, 3.5vh), 2rem);
+  --space-xl: clamp(2.5rem, min(4.8vw, 7vh), 3.5rem);
+
+  /* Icons */
+
+  --icon-m: clamp(1.4rem, 3.6vh, 1.8rem);
+  --icon-l: clamp(1.5rem, min(2.4vw, 4vh), 2rem);
 
   /* Radius */
 
@@ -148,25 +155,14 @@
 
 /* Fonts */
 
-/* Jura Bold (variable) */
+/* Jura (variable, wght 300–700) */
 @font-face {
   font-family: 'Jura';
   src:
     url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff2') format('woff2'),
     url('/src/assets/fonts/Jura/Jura-VariableFont_wght.woff') format('woff'),
     url('/src/assets/fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* Jura Regular */
-@font-face {
-  font-family: 'Jura';
-  src:
-    url('/src/assets/fonts/Jura/Jura-Regular.woff2') format('woff2'),
-    url('/src/assets/fonts/Jura/Jura-Regular.woff') format('woff'),
-    url('/src/assets/fonts/Jura/Jura-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 300 700;
   font-style: normal;
 }
 
@@ -186,26 +182,18 @@
   src:
     url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2'),
     url('/src/assets/fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
 }
 
 @media (max-width: 64rem) {
   :root {
-    --text-display: 3.2rem;
-    --text-title: 2.4rem;
-    --text-subtitle: 1.5rem;
-    --text-heading: 1.35rem;
     --layout-padding: var(--space-m);
   }
 }
 
 @media (max-width: 48rem) {
   :root {
-    --text-display: 2.2rem;
-    --text-title: 1.8rem;
-    --text-subtitle: 1.4rem;
-    --text-heading: 1.25rem;
     --text-body: 0.95rem;
     --layout-padding: var(--space-m);
   }
